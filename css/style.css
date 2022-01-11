@@ -174,8 +174,8 @@ header {
 
 
 .social-media a {
-  flex: 33.33%;
-  padding: 0 5px;
+  flex: 25%;
+  padding-left: 6px;
 }
 
 .social-media a img {
