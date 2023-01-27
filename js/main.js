@@ -327,11 +327,11 @@ $(document).ready(function () {
       var thisWidth = $(this).width();
       var thisHeight = $(this).height();
       var thisOffset = $(this).offset();
-      $(document).mousemove(function () {
-        var horTilt = ((mouseX / thisWidth) * (maxTilt * 2)) - maxTilt;
-        var verTilt = (((mouseY - thisOffset.top) / thisHeight) * (maxTilt * 2)) - maxTilt;
-        TweenMax.to('.hero-image', 1, { rotationY: horTilt, rotationX: verTilt, scale: 1.05, ease: Power1.easeOut });
-      });
+      // $(document).mousemove(function () {
+      //   var horTilt = ((mouseX / thisWidth) * (maxTilt * 2)) - maxTilt;
+      //   var verTilt = (((mouseY - thisOffset.top) / thisHeight) * (maxTilt * 2)) - maxTilt;
+      //   TweenMax.to('.hero-image', 1, { rotationY: horTilt, rotationX: verTilt, scale: 1.05, ease: Power1.easeOut });
+      // });
     });
 
 

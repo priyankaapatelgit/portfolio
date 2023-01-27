@@ -162,6 +162,8 @@ header {
 }
 
 
+
+
 .social-media {
   width: 150px;
   height: 40px;
@@ -514,6 +516,10 @@ header .logo {
 
 .big-height {
   min-height: 75vh;
+}
+
+.full-height {
+  min-height: 1000vh;
 }
 
 .portfolio_filter.stp {
@@ -2316,4 +2322,30 @@ form .form-group.in:after {
     font-size: 23px;
     margin-bottom: 0;
   }
+}
+
+.portfolio-button{
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.portfolio-title{
+  line-height: 50px;
+}
+
+.portfolio-role{
+  color: #919191;
+}
+
+.white{
+  color: #fff;
+}
+
+.box{
+  padding: 30px;
+}
+
+.item {
+  margin: 0 15px;
 }
