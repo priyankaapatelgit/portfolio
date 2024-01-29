@@ -113,23 +113,33 @@
       <div class="container">
         <div class="outter">
           <div class="inner">
-            <h1 class="hero-title"><span>Priyanka
-                Patel</span></h1>
+            
+            <!--<h1 class="hero-title"><span>Priyanka
+                Patel</span></h1>>-->
+                <img src="img/logo.png" width="50px" alt="logo"/>
             <p class="hero-text">
               Work Experience as in <br />
               <span class="element" data-values=" Web Designer., UI/UX Designer.,  Front End Developer.,   "
                 data-loop="true" data-backdelay="3"></span>
             </p>
-            <p>Hey there, I'm Priyanka!</p>
-            <p>I always admire how our mind works. Whether it’s finding a problem and solving it, coming up with
-              creative ideas, designing mesmerizing architecture, or User experience. It’s always surprised me. As a
-              designer, we give a different perspective to the people which never seen or felt before, and that thing
-              pulls out the designer from me.
+            <p>Hello and welcome to my design portfolio! My name is <b style="color:#fff">Priyanka Patel</b>.</p>
+            <p>II have always been fascinated by the workings 
+              of the human mind, whether it's identifying and solving problems, generating creative ideas, crafting captivating 
+              architecture, or focusing on user experience. As a designer, I am privileged to offer people a fresh perspective, 
+              something they've never seen or felt before, and that's what brings out the designer in me.</p>
+            <p>I am a passionate UX/UI designer who is dedicated to crafting seamless and visually compelling digital experiences. With a 
+              keen eye for detail and a user-centric approach, I specialize in transforming complex ideas into intuitive, aesthetically 
+              pleasing designs. Please explore my portfolio to see how I bring creativity and functionality together to elevate user interactions.
             </p>
             <p>
-              I have mixed experience in coding and designing. Experience in web design, UI/UX, and front-end. I am
-              continuing the journey of learning and expanding my knowledge in designing.
+              My experience as a designer and developer has helped me to understand both perspectives. 
+              I am continuing my journey of learning and expanding my knowledge in design.
             </p>
+             
+
+
+
+
             <div class="down-link no-border">
               <a href="#" class="section-down-arrow">
                 <svg class="scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
@@ -144,21 +154,35 @@
       </div>
       <div class="hero-image overlay" style="background-image: url(img/home-bg.jpg); opacity: 0.7"></div>
     </section>
-
+  
     <section class="content">
+      
 
+      <div class="container" >
+        
+        <div class="row masonry clearfix"  >
+          <!-- password div start-->
+          <div id="password" style="display: none; z-index: 99999;" class="main-password" >
+            <div class="divElement">
+            <h3>Enter password </h3>
+            <form id="passwordForm">
+                <input id="takeinput" type="password" class="pass-input" />  
+                <button  id="button" type="button"  onclick="if(document.getElementById('takeinput').value=='Innovator')
+                {window.location='sonny.html';}else{document.getElementById('error').style.display = 'block';return false;}">Submit</button>
+                 <div id="error" style="display: none; color:#b75b5b;font-size: 14px;padding-left: 20px; ">Invalid password</div>
+            </form>
+            </div>
+          </div>
+          <!-- password div end-->
 
-      <div class="container">
-        <div class="row masonry clearfix">
-
-           <!-- a work 1-->
-           <a href="budget.html" 
+           <!-- a work 1a-->
+           <a  onclick="document.getElementById('password').style.display = 'flex'; return false;"  style="cursor: pointer;" 
            class="col-xl-6 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
            <figure class="portfolio-item">
-             <div class="image half-height" style="background-image: url(img/portfolio-images/futuresafe.png)"></div>
+             <div class="image half-height" style="background-image: url(img/portfolio-images/SONNY.png)"></div>
              <figcaption>
                <div class="item-cat-mask">
-                 <span>Future Safe</span>
+                 <span>e-commerce website</span>
                  <span>Viev Project </span>
                </div>
                <h3 class="title">UI/UX Case Study</h3>
@@ -172,6 +196,28 @@
              </figcaption>
            </figure>
          </a>
+
+         <!-- a work 1-->
+         <a href="budget.html" 
+         class="col-xl-6 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
+         <figure class="portfolio-item">
+           <div class="image half-height" style="background-image: url(img/portfolio-images/futuresafe.png)"></div>
+           <figcaption>
+             <div class="item-cat-mask">
+               <span>Future Safe</span>
+               <span>Viev Project </span>
+             </div>
+             <h3 class="title">UI/UX Case Study</h3>
+             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="12.486" height="16.412"
+               viewBox="0 0 14.486 18.412">
+               <path
+                 d="M7.073,26.241h0L0,19.172l1.414-1.415,4.829,4.829V8h2V22.586l4.829-4.829,1.415,1.415-7.241,7.24Z"
+                 transform="translate(0 -8)"></path>
+             </svg>
+
+           </figcaption>
+         </figure>
+       </a>
 
           <!-- a work 2-->
           <a href="cookbook.html" 
@@ -334,7 +380,7 @@
       <div class="container">
         <div class="left-content float-left">
           <p>
-            © 2023. All Rights Reserved to Priyanka Patel.
+            © 2024. All Rights Reserved to Priyanka Patel.
           </p>
         </div>
         <div class="right-content float-right">
