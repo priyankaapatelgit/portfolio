@@ -164,19 +164,22 @@
           <!-- password div start-->
           <div id="password" style="display: none; z-index: 99999;" class="main-password" >
             <div class="divElement">
+              <div id='close' style="background-image: url(img/close.png);" class="close-btn" onclick="document.getElementById('password').style.display = 'none';"></div>
             <h3>Enter password </h3>
-            <form id="passwordForm">
-                <input id="takeinput" type="password" class="pass-input" />  
+            <form id="passwordForm" >
+              
+                <input id="takeinput" type="password" class="pass-input" >  
                 <button  id="button" type="button"  onclick="if(document.getElementById('takeinput').value=='Innovator')
-                {window.location='sonny.html';}else{document.getElementById('error').style.display = 'block';return false;}">Submit</button>
-                 <div id="error" style="display: none; color:#b75b5b;font-size: 14px;padding-left: 20px; ">Invalid password</div>
+                {window.location='sonny.html';}else{document.getElementById('error').style.visibility = 'visible';return false;}">Submit</button>
+                 <div id="error" style="visibility: hidden;color:#b75b5b;font-size: 14px;padding: 4px 0 0 20px; ">Invalid password</div>
             </form>
             </div>
           </div>
+          
           <!-- password div end-->
 
            <!-- a work 1a-->
-           <a  onclick="document.getElementById('password').style.display = 'flex'; return false;"  style="cursor: pointer;" 
+           <a  onclick="document.getElementById('password').style.display = 'flex';document.getElementById('takeinput').focus(); return false;"  style="cursor: pointer;" 
            class="col-xl-6 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
            <figure class="portfolio-item">
              <div class="image half-height" style="background-image: url(img/portfolio-images/SONNY.png)"></div>
@@ -391,6 +394,15 @@
   </main>
 
   <!-- Javascripts -->
+  <script>
+    var input = document.getElementById("takeinput");
+    input.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("button").click();
+      }
+    });
+    </script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

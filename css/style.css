@@ -2381,6 +2381,15 @@ form .form-group.in:after {
       height: 100vh;
       background: #333333a3;
 }
+.close-btn{
+  width: 28px;
+  height: 28px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
 
 .divElement{
  
@@ -2393,6 +2402,7 @@ form .form-group.in:after {
   height: 250px;
   font-family: 'Poppins', sans-serif;
   background: #080808;
+  position: relative;
 }​
 
 
