@@ -2481,7 +2481,9 @@ padding: 0 10%;
    a.item {
     margin:5px;
 }
-
+header {
+  top: 35%;
+}
 }
 
 
