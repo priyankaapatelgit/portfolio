@@ -146,7 +146,7 @@ header {
   z-index: 100;
   width: 100%;
   top: 0;
-  padding: 5vh 8vh;
+  padding: 5vh 0 5vh 8vh;
   opacity: 0;
 }
 
@@ -522,7 +522,7 @@ header .logo {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
   background-repeat: no-repeat;
 }
 
@@ -782,34 +782,7 @@ header .logo {
   height: 100%;
 }
 
-/* 1. No object-fit support: */
-
-@media (min-aspect-ratio: 16/9) {
-  .video-wrapper>video {
-    height: 300%;
-    top: -100%;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .video-wrapper>video {
-    width: 300%;
-    left: -100%;
-  }
-}
-
-/* 2. If supporting object-fit, overriding (1): */
-
-@supports (object-fit: cover) {
-  .video-wrapper>video {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
+/
 .portfolio-item.video figcaption {
   z-index: 10;
 }
@@ -1998,6 +1971,157 @@ form .form-group.in:after {
   opacity: .6;
 }
 
+
+.portfolio-button{
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.portfolio-title{
+  line-height: 50px;
+}
+
+.portfolio-role{
+  color: #919191;
+}
+
+.white{
+  color: #fff;
+}
+
+.box{
+  padding: 30px;
+}
+
+.item {
+  margin: 0 15px;
+}
+
+
+.videobox{
+  width:1500px;
+  height:1000px;
+  display: block;
+}
+
+.main-password{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #333333a3;
+}
+.close-btn{
+  width: 28px;
+  height: 28px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.divElement{
+ 
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 250px;
+  font-family: 'Poppins', sans-serif;
+  background: #080808;
+  position: relative;
+}
+
+.download-button{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar-mobile{
+  display: none;
+}
+
+.navbar{
+  position: relative;
+    float: right;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.navbar a{
+  
+ border: 1px solid #0FB4E2;
+ background: rgba(15, 180, 226, 0.5); /* default color */
+ border-radius: 30px 0 0 30px;
+  margin: 0 0 10px 10px;
+  padding: 8px 36px;
+  font-size: 16px;
+  color:#fff;
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to right, rgba(15, 180, 226, 0.15) 50%, rgba(16, 191, 240, 0.7) 50%) left;
+    background-size: 200%;
+    transition: .5s ease-out;
+
+}
+
+.navbar a:hover{
+  
+  background-position: right;
+ 
+ }
+ 
+ .navbar a.active{
+  background:  rgba(6, 191, 240, 0.7) ;
+ }
+
+.aboutme{
+  width: 250px; 
+  height: 350px; 
+  float: left;
+  margin: 10px 30px 30px 10%;     
+  border-radius: 10px;
+}
+
+.main-page p{
+padding: 0 10%;
+}
+
+
+
+
+/*---------------- @media query ------------------*/
+
+@media only screen and (max-width: 1440px){
+  .inner p {
+    padding: 0 1%;
+  }
+
+  .aboutme{
+    width: 250px; 
+    height: 280px; 
+    margin: 10px 20px 20px 1%;     
+  }
+
+  p {
+    font-size: 15px;
+}
+
+.portfolio-title {
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+
+} /*@media 1440 end*/
+
 @media only screen and (max-width: 1024px) {
   .grid-item.video .image {
     visibility: visible;
@@ -2028,18 +2152,18 @@ form .form-group.in:after {
   }
 
   h3 {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   h4 {
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 17px;
+    line-height: 20px;
   }
 
   h5 {
     font-size: 16px;
-    line-height: 40px;
+    line-height: 16px;
   }
 
   .portfolio-category {
@@ -2069,9 +2193,34 @@ form .form-group.in:after {
     padding: 0 30px;
   }
 
-  
-  
+  p {
+    font-size: 13px;
+    line-height: 20px;
 }
+
+.navbar a {
+  padding: 8px 22px 8px 24px;
+  font-size: 14px;
+}
+
+.aboutme {
+  width: 170px;
+  height: 210px;
+  margin: 10px 20px 20px 0;
+}
+
+.inner p {
+  padding: 0 ;
+}
+.grid-item figcaption .title{
+  font-size: 16px;
+}
+
+.grid-item figcaption span.password{
+  font-size: 14px;
+}
+
+}/*@media 1024 end*/
 
 @media only screen and (max-width: 768px) {
   .nav-icon{
@@ -2085,17 +2234,29 @@ form .form-group.in:after {
     font-size: 32px;
   }
   p {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 11px;
+    line-height: 16px;
   }
+
+  .aboutme {
+    width: 70px;
+    height: 80px;
+    margin: 0 10px 10px 0;
+}
+
+.portfolio-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
 
   .portfolio-item .big-height, .portfolio-item .half-height, .portfolio-item .little-height {
     min-height: 25vh;
   }
 
   .grid-item figcaption .title {
-    font-size: 20px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
 
@@ -2246,7 +2407,18 @@ form .form-group.in:after {
   }
 
   header {
-    padding: 4vh 5vh;
+    padding: 2vh 0;
+  }
+
+  .social-media {
+    width: 40px;
+    height: 40px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .social-media a{
+    padding-bottom: 5px;
   }
 
   .contact-info .col-lg-4 {
@@ -2256,6 +2428,60 @@ form .form-group.in:after {
   .map {
     width: 80vw;
   }
+
+  .navbar{
+    display:none;
+  }
+
+  .navbar-mobile{
+    position: relative;
+      float: right;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+  }
+  
+  .navbar-mobile a{
+    
+   border: 1px solid #0FB4E2;
+   background: rgba(15, 180, 226, 0.5); /* default color */
+   border-radius: 30px 0 0 30px;
+    margin: 0 0 10px 10px;
+    padding: 8px 14px 8px 20px;
+    font-size: 16px;
+    color:#fff;
+      /* "to left" / "to right" - affects initial color */
+      background: linear-gradient(to right, rgba(15, 180, 226, 0.15) 50%, rgba(16, 191, 240, 0.7) 50%) left;
+      background-size: 200%;
+      transition: .5s ease-out;
+  
+  }
+  
+  .navbar-mobile a:hover{
+    
+    background-position: right;
+   
+   }
+   
+   .navbar-mobile a.active{
+    background:  rgba(6, 191, 240, 0.7) ;
+   }
+  
+   .portfolio-item figcaption .arrow{
+    display: none;
+   }
+
+   .box {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   a.item {
+    margin:5px;
+}
+
 }
 
 
@@ -2344,71 +2570,6 @@ form .form-group.in:after {
   }
 }
 
-.portfolio-button{
-  position: relative;
-  float: right;
-  cursor: pointer;
-}
-
-.portfolio-title{
-  line-height: 50px;
-}
-
-.portfolio-role{
-  color: #919191;
-}
-
-.white{
-  color: #fff;
-}
-
-.box{
-  padding: 30px;
-}
-
-.item {
-  margin: 0 15px;
-}
-
-
-.videobox{
-  width:1500px;
-  height:1000px;
-  display: block;
-}
-
-.main-password{
-      position: absolute;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #333333a3;
-}
-.close-btn{
-  width: 28px;
-  height: 28px;
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
-}
-
-.divElement{
- 
-  display: flex;
-  padding: 50px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 500px;
-  height: 250px;
-  font-family: 'Poppins', sans-serif;
-  background: #080808;
-  position: relative;
-}
 
 
 
