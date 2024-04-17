@@ -52,7 +52,7 @@ button{
 }
 
 .grid-item figcaption span.password{
-  font-size: 20px;
+  font-size: 14px;
   color:#0FB4E2;
 }
 
@@ -535,7 +535,7 @@ header .logo {
 }
 
 .little-height {
-  min-height: 30vh;
+  min-height: 40vh;
 }
 
 .big-height {
@@ -625,7 +625,7 @@ header .logo {
 }
 
 .grid-item figcaption .title {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 5px;
   color: #000;
@@ -1998,10 +1998,11 @@ form .form-group.in:after {
 
 .main-title{
   text-align: center;
-    font-size: xx-large;
+    font-size: 22px;
     padding: 8px 0;
     border-top: 1px solid rgba(6, 191, 240, 0.7);
     border-bottom: 1px solid rgba(6, 191, 240, 0.7);
+    background: rgba(6, 191, 240, 0.2);
     margin-bottom: 60px;
 }
 
@@ -2095,7 +2096,6 @@ form .form-group.in:after {
   
   background-position: right;
  
- }
  
  .navbar a.active{
   background:  rgba(6, 191, 240, 0.7) ;
@@ -2193,6 +2193,7 @@ padding: 0 10%;
     min-height: 30vh;
   }
 
+  
   .section-title .title {
     font-size: 29px;
   }
@@ -2239,9 +2240,16 @@ padding: 0 10%;
   font-size: 14px;
 }
 
+.main-title {
+  font-size: 20px;
+}
+
 }/*@media 1024 end*/
 
 @media only screen and (max-width: 768px) {
+  .main-title {
+    font-size: 18px;
+  }
   .nav-icon{
     display: none;
   }
@@ -2508,7 +2516,9 @@ header {
 
 @media only screen and (max-width: 414px) {
 
-
+  .main-title {
+    font-size: 16px;
+  }
   .hero-title {
     font-size: 31px;
   }
