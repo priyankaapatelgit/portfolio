@@ -10,11 +10,6 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
   <!-- FAVICON  -->
   <link rel="shortcut icon" href="img/favicon.png" />
 
@@ -51,10 +46,7 @@
             <a href="mailto:priyanka.createweb@gmail.com" target="_blank"><img
               src="img/social-media/email.png" alt="" /></a>
       </div>
-      <!-- <div class="nav-icon">
-        <span></span>
-        <span></span>
-      </div> -->
+
       <div class="navbar">
         <a href="index.html" class="active">Portfolio</a>
         <a href="aboutme.html">About</a>
@@ -125,8 +117,6 @@
         <div class="outter">
           <div class="inner">
             
-            <!--<h1 class="hero-title"><span>Priyanka
-                Patel</span></h1>>-->
                 <img src="img/logo.png" width="42px" alt="logo"/>
             <p class="hero-text">
               Work Experience as in <br />
@@ -220,7 +210,23 @@
             </div>         
             <!-- password div end-->
 
-           <!-- a work 1-->
+
+            <!-- password div for fx order start-->
+            <div id="password4" style="display: none; z-index: 99999;" class="main-password" >
+              <div class="divElement">
+                <div id='close4' style="background-image: url(img/close.png);" class="close-btn" onclick="document.getElementById('password4').style.display = 'none';"></div>
+              <h3>Enter password </h3>
+              <form id="passwordForm" >
+                  <input id="takeinput4" type="password" class="pass-input" >  
+                  <button  id="button4" type="button"  onclick="if(document.getElementById('takeinput4').value=='Innovator')
+                  {window.location='fxorder.html';}else{document.getElementById('error4').style.visibility = 'visible';return false;}">Submit</button>
+                   <div id="error4" style="visibility: hidden;color:#b75b5b;font-size: 14px;padding: 4px 0 0 20px; ">Invalid password</div>
+              </form>
+              </div>
+            </div>         
+            <!-- password div end-->
+
+           <!-- a UX 1-->
            <a  onclick="document.getElementById('password2').style.display = 'flex';document.getElementById('takeinput2').focus(); return false;"  style="cursor: pointer;" 
            class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
            <figure class="portfolio-item">
@@ -242,7 +248,7 @@
            </figure>
          </a>
 
-         <!-- a work 2-->
+         <!-- a UX 2-->
          <a  onclick="document.getElementById('password').style.display = 'flex';document.getElementById('takeinput').focus(); return false;"  style="cursor: pointer;" 
          class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
          <figure class="portfolio-item">
@@ -264,7 +270,7 @@
          </figure>
        </a>
 
-       <!-- a work 3-->
+       <!-- a UX 3-->
        <a  onclick="document.getElementById('password3').style.display = 'flex';document.getElementById('takeinput3').focus(); return false;"  style="cursor: pointer;" 
        class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
        <figure class="portfolio-item">
@@ -288,7 +294,7 @@
 
          
 
-       <!-- a work 4-->
+       <!-- a UX 4-->
        <a href="budget.html" 
        class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
        <figure class="portfolio-item">
@@ -311,7 +317,7 @@
         </a>
 
 
-        <!-- a work 5-->
+        <!-- a UX 5-->
         <a href="clockin.html" 
         class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
         <figure class="portfolio-item">
@@ -335,7 +341,7 @@
 
          
 
-          <!-- a work 6-->
+          <!-- a UX 6-->
           <a href="cookbook.html" 
           class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
           <figure class="portfolio-item">
@@ -361,7 +367,7 @@
 
           
 
-          <!-- a work 7-->
+          <!-- a UX 7-->
           <a href="power.html" 
             class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
             <figure class="portfolio-item">
@@ -383,11 +389,38 @@
             </figure>
           </a>
           </div>
+
+
+          <div class="main-title">Front-end development</div>
+            <div class="row masonry clearfix"  >
+              <!-- a Front-end 1-->
+           <a  onclick="document.getElementById('password4').style.display = 'flex';document.getElementById('takeinput4').focus(); return false;"  style="cursor: pointer;" 
+           class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
+           <figure class="portfolio-item">
+             <div class="image little-height" style="background-image: url(img/portfolio-images/fxorder.svg)"></div>
+             <figcaption>
+               <div class="item-cat-mask">
+                 <span>FX order dashboard/portal</span>
+                 <span>Viev Project </span>
+               </div>
+               <h3 class="title">Front-end development <span class="password">(Password Protected)</span></h3>
+               <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="12.486" height="16.412"
+                 viewBox="0 0 14.486 18.412">
+                 <path
+                   d="M7.073,26.241h0L0,19.172l1.414-1.415,4.829,4.829V8h2V22.586l4.829-4.829,1.415,1.415-7.241,7.24Z"
+                   transform="translate(0 -8)"></path>
+               </svg>
+
+             </figcaption>
+           </figure>
+         </a>
+            </div>
+
          
-          <div class="main-title">Web design </div>
+          <div class="main-title">Web design</div>
             <div class="row masonry clearfix"  >
 
-          <!-- a work 8-->
+          <!-- a Web 1-->
           <a href="http://andaazmfg.com/" target="_blank" class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
             <figure class="portfolio-item">
               <div class="image little-height" style="background-image: url(img/portfolio-images/andaaz.png)"></div>
@@ -407,27 +440,7 @@
             </figure>
           </a>
 
-          <!-- a work 5
-          <a href="https://cigarlockdown.com/" target="_blank"
-            class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-item white brandings">
-            <figure class="portfolio-item">
-              <div class="image half-height" style="background-image: url(img/portfolio-images/cigar.png)"></div>
-              <figcaption>
-                <div class="item-cat-mask">
-                  <span>Cigar Lockdown</span>
-                  <span>Viev Project </span>
-                </div>
-                <h3 class="title">Web Designing</h3>
-                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="12.486" height="16.412"
-                  viewBox="0 0 14.486 18.412">
-                  <path
-                    d="M7.073,26.241h0L0,19.172l1.414-1.415,4.829,4.829V8h2V22.586l4.829-4.829,1.415,1.415-7.241,7.24Z"
-                    transform="translate(0 -8)"></path>
-                </svg>
-              </figcaption>
-            </figure>
-          </a>-->
-          <!-- a work 9-->
+          <!-- a Web 2-->
           <a href="https://curvehospitality.com/" target="_blank"
             class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
             <figure class="portfolio-item">
@@ -447,27 +460,6 @@
               </figcaption>
             </figure>
           </a>
-
-          <!-- a work 7
-          <a href="https://levelconstruction.net/" target="_blank"
-            class="col-lg-6 col-md-6 grid-item photography white overlay">
-            <figure class="portfolio-item">
-              <div class="image half-height" style="background-image: url(img/portfolio-images/level.png)"></div>
-              <figcaption>
-                <div class="item-cat-mask">
-                  <span>level Construction</span>
-                  <span>Viev Project </span>
-                </div>
-                <h3 class="title">Web Designing (WordPress)</h3>
-                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="12.486" height="16.412"
-                  viewBox="0 0 14.486 18.412">
-                  <path
-                    d="M7.073,26.241h0L0,19.172l1.414-1.415,4.829,4.829V8h2V22.586l4.829-4.829,1.415,1.415-7.241,7.24Z"
-                    transform="translate(0 -8)"></path>
-                </svg>
-              </figcaption>
-            </figure>
-          </a>-->
         
         </div>
 
@@ -515,6 +507,15 @@
           }
         });
         </script>
+        <script>
+          var input = document.getElementById("takeinput4");
+          input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              document.getElementById("button4").click();
+            }
+          });
+          </script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
