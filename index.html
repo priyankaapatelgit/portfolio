@@ -226,6 +226,21 @@
             </div>         
             <!-- password div end-->
 
+            <!-- password div for UI library start-->
+            <div id="password5" style="display: none; z-index: 99999;" class="main-password" >
+              <div class="divElement">
+                <div id='close5' style="background-image: url(img/close.png);" class="close-btn" onclick="document.getElementById('password5').style.display = 'none';"></div>
+              <h3>Enter password </h3>
+              <form id="passwordForm" >
+                  <input id="takeinput5" type="password" class="pass-input" >  
+                  <button  id="button5" type="button"  onclick="if(document.getElementById('takeinput5').value=='Innovator')
+                  {window.location='unifiedui.html';}else{document.getElementById('error5').style.visibility = 'visible';return false;}">Submit</button>
+                   <div id="error5" style="visibility: hidden;color:#b75b5b;font-size: 14px;padding: 4px 0 0 20px; ">Invalid password</div>
+              </form>
+              </div>
+            </div>         
+            <!-- password div end-->
+
            <!-- a UX 1-->
            <a  onclick="document.getElementById('password2').style.display = 'flex';document.getElementById('takeinput2').focus(); return false;"  style="cursor: pointer;" 
            class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
@@ -414,6 +429,28 @@
              </figcaption>
            </figure>
          </a>
+
+         <!-- a Front-end 2-->
+         <a  onclick="document.getElementById('password5').style.display = 'flex';document.getElementById('takeinput5').focus(); return false;"  style="cursor: pointer;" 
+         class="col-xl-4 col-lg-6 col-md-6 col-sm-12 white grid-item digital overlay">
+         <figure class="portfolio-item">
+           <div class="image little-height" style="background-image: url(img/portfolio-images/unifiedui.svg)"></div>
+           <figcaption>
+             <div class="item-cat-mask">
+               <span>Unified UI library</span>
+               <span>Viev Project </span>
+             </div>
+             <h3 class="title">Front-end development <span class="password">(Password Protected)</span></h3>
+             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="12.486" height="16.412"
+               viewBox="0 0 14.486 18.412">
+               <path
+                 d="M7.073,26.241h0L0,19.172l1.414-1.415,4.829,4.829V8h2V22.586l4.829-4.829,1.415,1.415-7.241,7.24Z"
+                 transform="translate(0 -8)"></path>
+             </svg>
+
+           </figcaption>
+         </figure>
+       </a>
             </div>
 
          
@@ -516,6 +553,15 @@
             }
           });
           </script>
+          <script>
+            var input = document.getElementById("takeinput5");
+            input.addEventListener("keypress", function(event) {
+              if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("button5").click();
+              }
+            });
+            </script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
