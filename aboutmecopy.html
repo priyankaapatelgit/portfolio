@@ -74,60 +74,10 @@
         <div class="outter">
           <div class="inner">
             <h1 class="portfolio-title">My story</h1>
-            <div class="outer_about">
+            <div style="text-align: left;">
               <div style="background-image: url(img/me.jpg);   background-size: cover;
               background-position: left center;" class="aboutme"> </div>
-              <div class="outer_collapse">
-              <button class="collapsible">Meet Me:</button>
-              <div class="coll_content">
-                <p>
-                  I'm a passionate UX/UI designer with a diverse background in web design and front-end development. 
-                  Over the past decade, I've embarked on an exciting journey through the digital landscape, 
-                  where art and technology intersect to create meaningful user experiences.
-                </p>
-              </div>
-              <button class="collapsible">Creativity and Design:</button>
-              <div class="coll_content">
-                <p>
-                  My journey in the digital realm has been fueled by a deep-seated passion for art and design. 
-                  I believe that UX design is not just a profession but a daily practice of creativity and innovation. 
-                  I strive to infuse creativity into every aspect of my work, from visual aesthetics to interactive 
-                   experiences, to create designs that are both beautiful and functional.
-                </p>
-              </div>
-              <button class="collapsible">Personal Life:</button>
-              <div class="coll_content">
-                <p>
-                  Outside of my professional endeavors, I enjoy exploring the world of art, cooking, and music. 
-                  I find inspiration in nature and love capturing its beauty through my eyes. Additionally, 
-                  I like to travel and enjoy immersing myself in different cultures and cuisines. Family plays 
-                  a central role in my life, and I cherish spending quality time with loved ones, whether it's 
-                  cooking together, going on outdoor adventures, or simply sharing laughter and stories around the dinner table.
-                </p>
-              </div>
-              <button class="collapsible">Professional Background:</button>
-              <div class="coll_content">
-                <p>
-                  I began my career as a web designer, where I honed my skills in design principles, typography, and color theory. 
-                  Transitioning into front-end development, I gained expertise in HTML, CSS, JavaScript, and responsive design, 
-                  mastering the art of translating design concepts into functional websites.</p>
-                  <p>
-                  As a UX/UI designer, I combine my visual design expertise with a user-centered approach. I deeply understand the 
-                  importance of empathy and inclusivity in design, and I leverage research, prototyping, and iterative design to create 
-                  intuitive and accessible experiences for users.
-                </p>
-              </div>
-              <button class="collapsible">Looking Ahead:</button>
-              <div class="coll_content">
-                <p>
-                  In the ever-evolving field of UX/UI design, I'm excited to embrace new technologies, methodologies, and challenges. 
-                  My ultimate goal is to create digital experiences that resonate deeply with users, making technology more approachable, 
-                  enjoyable, and meaningful. I'm passionate about solving real-world problems through design, and I'm committed to turning 
-                  everyday challenges into opportunities for creativity and wonder.
-                </p>
-              </div>
-            </div>
-            <!-- <p>As a UX/UI designer with a rich background as a web designer and front-end developer, my journey through the digital landscape has 
+            <p>As a UX/UI designer with a rich background as a web designer and front-end developer, my journey through the digital landscape has 
               been a vibrant and deeply fulfilling exploration of art and technology's intersection. My passion for art and design has always driven me, 
               leading me to see the beauty and potential for user experience (UX) design in everything around us. I believe that UX is not just a 
               professional discipline but a daily practice where we encounter and solve real-world problems with creativity and innovation.</p>
@@ -152,7 +102,7 @@
               <p>As I look forward, I am eager to continue advancing in UX/UI design, embracing emerging technologies, methodologies, and challenges. 
                 My ambition is to create digital experiences that deeply resonate with users, making technology more approachable, enjoyable, and 
                 meaningful. Through my work, I strive to solve the real-time problems that surround us, turning everyday challenges into opportunities 
-                for creativity and wonder.</p> -->
+                for creativity and wonder.</p>
               </div>
            
             <div class="down-link no-border">
@@ -208,26 +158,6 @@
   </main>
 
   <!-- Javascripts -->
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    // Open the first collapsible section by default
-document.getElementsByClassName("coll_content")[0].style.display = "block";
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-
-
-    </script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

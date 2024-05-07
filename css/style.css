@@ -1500,6 +1500,73 @@ footer .uptotop i {
   -moz-transition: all ease 0.4s;
 }
 
+.outer_about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aboutme{
+  width: 20%; 
+  height: 350px;     
+  border-radius: 10px;
+}
+
+.outer_collapse{
+  margin-left: 5%;
+  width: 75%;
+}
+
+/*  collapsible about me */
+
+.collapsible {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  margin: 6px 0;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #037697;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.coll_content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.coll_content p {
+  padding: 10px;
+  text-align: left;
+}
+
+.outer_collapse button{
+  border-radius: 10px;
+  border:1px solid #0FB4E2;
+}
+
+/*  collapsible about me end */
+
 .lightbox:hover img {
   transform: scale(1.03);
   transition: all ease 0.4s;
@@ -2101,13 +2168,7 @@ form .form-group.in:after {
   background:  rgba(6, 191, 240, 0.7) ;
  }
 
-.aboutme{
-  width: 250px; 
-  height: 350px; 
-  float: left;
-  margin: 10px 30px 30px 10%;     
-  border-radius: 10px;
-}
+
 
 .main-page p{
 padding: 0 10%;
@@ -2119,15 +2180,17 @@ padding: 0 10%;
 /*---------------- @media query ------------------*/
 
 @media only screen and (max-width: 1440px){
+
+  .aboutme{
+    width: 20%; 
+    height: 280px; 
+      
+  }
   .inner p {
     padding: 0 1%;
   }
 
-  .aboutme{
-    width: 250px; 
-    height: 280px; 
-    margin: 10px 20px 20px 1%;     
-  }
+  
 
   p {
     font-size: 15px;
@@ -2142,6 +2205,13 @@ padding: 0 10%;
 } /*@media 1440 end*/
 
 @media only screen and (max-width: 1024px) {
+
+  .aboutme {
+    width: 20%;
+    height: 210px;
+  }
+  
+
   .grid-item.video .image {
     visibility: visible;
     display: block;
@@ -2223,11 +2293,6 @@ padding: 0 10%;
   font-size: 14px;
 }
 
-.aboutme {
-  width: 170px;
-  height: 210px;
-  margin: 10px 20px 20px 0;
-}
 
 .inner p {
   padding: 0 ;
@@ -2247,6 +2312,10 @@ padding: 0 10%;
 }/*@media 1024 end*/
 
 @media only screen and (max-width: 768px) {
+  .aboutme {
+    width: 20%;
+    height: 80px;
+}
   .main-title {
     font-size: 18px;
   }
@@ -2265,11 +2334,7 @@ padding: 0 10%;
     line-height: 16px;
   }
 
-  .aboutme {
-    width: 70px;
-    height: 80px;
-    margin: 0 10px 10px 0;
-}
+ 
 
 .portfolio-title {
   margin-top: 10px;
