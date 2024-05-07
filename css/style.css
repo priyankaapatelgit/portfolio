@@ -1503,7 +1503,7 @@ footer .uptotop i {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .aboutme {
@@ -2323,6 +2323,8 @@ form .form-group.in:after {
         height: 25vh;
         margin: 0 20%;
     }
+    .outer_about {
+      flex-wrap: wrap;
     }
 
     .outer_collapse {
