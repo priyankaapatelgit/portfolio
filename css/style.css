@@ -472,12 +472,16 @@ header .logo {
   display: table;
 }
 
+
+
 .inner {
   height: 100%;
   width: 100%;
   display: table-cell;
   vertical-align: middle;
 }
+
+
 
 .hero-title {
   color: #fff;
@@ -1551,9 +1555,9 @@ footer .uptotop i {
 .coll_content {
   padding: 0 18px;
   overflow: hidden;
-  /* max-height: 0;
-  transition: max-height 0.2s ease-out; */
-  display: none;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  /* display: none; */
 
 }
 
