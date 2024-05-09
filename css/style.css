@@ -481,6 +481,28 @@ header .logo {
   vertical-align: middle;
 }
 
+.front_format{
+  display: flex;
+  padding-top: 14%;
+ flex-wrap: nowrap;
+ justify-content: space-around;
+}
+
+.left-image{
+  width: 25%;
+  padding-top: 8%;
+}
+
+.left-image img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.right_content{
+  width: 75%;
+  text-align: left;
+}
+
 
 
 .hero-title {
@@ -2069,6 +2091,10 @@ form .form-group.in:after {
   padding: 2% 20%;
 }
 
+.pro-item{
+  padding: 6px 0;
+}
+
 .main-title {
   text-align: center;
   font-size: 22px;
@@ -2205,6 +2231,15 @@ form .form-group.in:after {
       font-size: 32px;
     }
 
+    .left-image{
+      width: 30%;
+      padding-top: 16%;
+    }
+    
+    .right_content{
+      width: 70%;
+    }
+    
 
   }
 
@@ -2216,6 +2251,18 @@ form .form-group.in:after {
     height: 25vh;
   }
 
+  .collapsible {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .container {
+    width: 84%;
+    margin-left: 8%;
+}
+.portfolio-role {
+  padding: 2% 14%;
+}
 
     .grid-item.video .image {
       visibility: visible;
@@ -2322,13 +2369,24 @@ form .form-group.in:after {
 
   @media only screen and (max-width: 768px) {
 
+    .container {
+      width: 80%;
+  }
+
     .aboutme {
       width: 60%;
         height: 25vh;
         margin: 0 20%;
     }
+
+    .portfolio-role {
+      flex-wrap: wrap;
+      font-size: 12px;
+      padding: 2% 20% 2% 30%;
+  }
     .outer_about {
       flex-wrap: wrap;
+      
     }
 
     .outer_collapse {
@@ -2338,6 +2396,21 @@ form .form-group.in:after {
     .collapsible {
       padding: 12px;
       font-size: 12px;
+    }
+
+    .front_format {
+      padding-top: 8%;
+      flex-wrap: wrap;
+    }
+
+    .left-image{
+      width: 100%;
+      padding-top: 0;
+      max-width: 140px;
+    }
+    
+    .right_content{
+      width: 100%;
     }
 
     .main-title {
@@ -2366,7 +2439,7 @@ form .form-group.in:after {
     .portfolio-title {
       margin-top: 10px;
       margin-bottom: 10px;
-      font-size: 28px;
+      font-size: 22px;
     }
 
     .portfolio-item .big-height, .portfolio-item .half-height, .portfolio-item .little-height {
@@ -2553,12 +2626,12 @@ form .form-group.in:after {
     }
 
     .navbar-mobile {
-      position: relative;
-      float: right;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      padding: 0;
+      position: fixed;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        right: 0;
     }
 
     .navbar-mobile a {
@@ -2603,7 +2676,7 @@ form .form-group.in:after {
     }
 
     header {
-      top: 35%;
+      top: 2%;
     }
   }
 

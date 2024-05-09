@@ -208,59 +208,25 @@
   </main>
 
   <!-- Javascripts -->
-  <script>
+
+  <script>// Info collapsible 
     var coll = document.getElementsByClassName("collapsible");
-    var i;
-    // Open the first collapsible section by default
-//document.getElementsByClassName("coll_content")[0].style.maxHeight = "fit-content";
+    var currentEle = null;
     
-    for (i = 0; i < coll.length; i++) {
+    for (var i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
         if (content.style.maxHeight){
           content.style.maxHeight = null;
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+          content.style.maxHeight = "fit-content";
         } 
+        if(currentEle!=null) currentEle.click();
+        currentEle = this;
       });
     }
-
-
-    //    for (i = 0; i < coll.length; i++) {
-    //   coll[i].addEventListener("click", function() {
-    //     this.classList.toggle("active");
-    //     var content = this.nextElementSibling;
-    //     if (content.style.maxHeight){
-    //       content.style.maxHeight = null;
-    //     } else {
-    //       content.style.maxHeight = content.scrollHeight + "px";
-    //        //Close previously opened section
-    //   var openContent = document.querySelector(".coll_content[style='maxHeight: fit-content;']");
-    //   if (openContent) {
-    //     openContent.style.maxHeight = 0;
-    //   }
-    //   content.style.maxHeight = "fit-content";
-    //     } 
-    //   });
-    // }
-
-//     for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       // Close previously opened section
-//       var openContent = document.querySelector(".coll_content[style='display: block;']");
-//       if (openContent) {
-//         openContent.style.display = "none";
-//       }
-//       content.style.display = "block";
-//     }
-//   });
-// }
+    document.getElementsByClassName("collapsible")[0].click();
 
     </script>
   <script src="js/jquery-3.5.0.min.js"></script>
