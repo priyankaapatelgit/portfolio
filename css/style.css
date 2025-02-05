@@ -2182,12 +2182,11 @@ select:-webkit-autofill {
 }
 .tc-loader .load-inner {
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 77px;
+  height: 77px;
   top: 50%;
   left: 50%;
-  -webkit-transform: rotateZ(45deg) translateY(-50%) translateX(-50%);
-  transform: rotateZ(45deg) translateY(-50%) translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 .tc-loader .tcload-cube {
   position: relative;
