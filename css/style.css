@@ -2392,10 +2392,7 @@ select:-webkit-autofill {
   .tc-slider {
     zoom: 0.75;
   }
-  .sldr-title-large {
-    font-size: 42px;
-    line-height: 1.3;
-  }
+
   .sldr-pgraph br {
     display: none;
   }
