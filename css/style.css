@@ -2337,13 +2337,13 @@ select:-webkit-autofill {
   .container-mid {
     width: 100%;
   }
-  /*.sldr-title-large {
-    font-size: 44px;
-    line-height: 1.3em;
+  .sldr-title-large {
+    font-size: 36px;
+    line-height: 1em;
   }
-   .sldr-pgraph {
-    font-size: 20px;
-  } */
+  .sldr-pgraph {
+    font-size: 18px;
+  }
   .tc-testimonial .testi-desc p {
     font-size: 16px;
     line-height: 24px;
