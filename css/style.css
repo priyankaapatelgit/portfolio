@@ -2341,9 +2341,9 @@ select:-webkit-autofill {
     font-size: 44px;
     line-height: 1.3em;
   }
-  .sldr-pgraph {
+  /* .sldr-pgraph {
     font-size: 20px;
-  }
+  } */
   .tc-testimonial .testi-desc p {
     font-size: 16px;
     line-height: 24px;
