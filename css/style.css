@@ -966,8 +966,6 @@ div[class*="filter-"] ul li {
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.3s all ease;
-  margin-bottom: 6px;
-  margin-right: 6px;
 }
 .filter-style1 ul li.uk-active a,
 .filter-style1 ul li a:hover {
@@ -2338,7 +2336,7 @@ select:-webkit-autofill {
     width: 100%;
   }
   .sldr-title-large {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1em;
   }
   .sldr-pgraph {
