@@ -2337,9 +2337,10 @@ select:-webkit-autofill {
   }
   .sldr-title-large {
     font-size: 30px;
+    line-height: 0.8em;
   }
   .sldr-pgraph {
-    font-size: 18px;
+    font-size: 16px;
   }
   .tc-testimonial .testi-desc p {
     font-size: 16px;
