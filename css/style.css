@@ -2383,6 +2383,9 @@ select:-webkit-autofill {
   .password-inner {
     padding: 5.5em 2em;
   }
+  .filter-style1 ul {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 420px) {
   .tc-footer .tc-totopscroll {
