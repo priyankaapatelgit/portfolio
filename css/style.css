@@ -2336,8 +2336,8 @@ select:-webkit-autofill {
     width: 100%;
   }
   .sldr-title-large {
-    font-size: 26px;
-    line-height: 0.8em;
+    font-size: 32px;
+    line-height: 1em;
   }
   .sldr-pgraph {
     font-size: 16px;
