@@ -305,8 +305,41 @@
               </div>
             </div>
           </div>
+          <!-- Case Study Overview -->
+          <div id="case-study-overview" class="index-container mt100">
+            <h2>Case Study <span class="half-highlight">Outline</span></h2>
+            <div class="index">
+              <a href="#problem"
+                ><span>Problem & Solution</span> <span>↓</span></a
+              >
+              <a href="#user"
+                ><span>Understanding the user</span> <span>↓</span></a
+              >
+              <a href="#persona"><span>User Personas</span> <span>↓</span></a>
+              <a href="#map"><span>User Journey Map</span> <span>↓</span></a>
+              <a href="#audit"
+                ><span>Competitive Analysis</span> <span>↓</span></a
+              >
+              <a href="#paper"><span>Wireframes</span> <span>↓</span></a>
+              <a href="#digital"
+                ><span>Digital Wireframes</span> <span>↓</span></a
+              >
+              <a href="#testing"
+                ><span>Usability Testing</span> <span>↓</span></a
+              >
+              <a href="#refine"
+                ><span>Refining the design</span> <span>↓</span></a
+              >
+              <a href="#designS"><span>Design Systems</span> <span>↓</span></a>
+              <a href="#mockup"><span>Mockups</span> <span>↓</span></a>
+              <a href="#prototype"><span>Prototype</span> <span>↓</span></a>
+              <a href="#impact"
+                ><span>Impact and Reflection</span> <span>↓</span></a
+              >
+            </div>
+          </div>
           <!--1-->
-          <div class="pf-info">
+          <div id="problem" class="pf-info">
             <div class="bs-title">
               <h3>Project Overview</h3>
               <span class="title-number">01</span>
@@ -331,7 +364,7 @@
                 <li>
                   <div class="services-item">
                     <i class="li li-target"></i>
-                    <h3>GOAL</h3>
+                    <h3>SOLUTION</h3>
                     <p>
                       ClockIn aims to provide a structured scheduling solution
                       where employees can update their availability, view
@@ -344,17 +377,9 @@
                 </li>
               </ul>
             </div>
-            <div class="uk-grid" data-uk-grid-margin="">
-              <div class="uk-width-medium-1 mt30">
-                <img
-                  src="images/portfolio/staffing/cl-12.png"
-                  alt="design process"
-                />
-              </div>
-            </div>
           </div>
           <!--2-->
-          <div class="pf-info">
+          <div id="user" class="pf-info">
             <div class="bs-title">
               <h3>Understanding the user</h3>
               <span class="title-number">02</span>
@@ -399,7 +424,7 @@
             </div>
           </div>
           <!--3-->
-          <div class="pf-info">
+          <div id="persona" class="pf-info">
             <div class="bs-title">
               <h3>User Personas</h3>
               <span class="title-number">03</span>
@@ -439,7 +464,7 @@
             </div>
           </div>
           <!--4-->
-          <div class="pf-info">
+          <div id="map" class="pf-info">
             <div class="bs-title">
               <h3>User Journey Map</h3>
               <span class="title-number">04</span>
@@ -474,7 +499,7 @@
             </div>
           </div>
           <!--5-->
-          <div class="pf-info">
+          <div id="audit" class="pf-info">
             <div class="bs-title">
               <h3>Competitive Analysis</h3>
               <span class="title-number">05</span>
@@ -530,7 +555,7 @@
             </div>
           </div>
           <!--6-->
-          <div class="pf-info">
+          <div id="paper" class="pf-info">
             <div class="bs-title">
               <h3>Sketching & Paper Wireframes</h3>
               <span class="title-number">06</span>
@@ -553,7 +578,7 @@
             </div>
           </div>
           <!--7-->
-          <div class="pf-info">
+          <div id="digital" class="pf-info">
             <div class="bs-title">
               <h3>Digital Wireframes</h3>
               <span class="title-number">07</span>
@@ -573,7 +598,7 @@
             </div>
           </div>
           <!--8-->
-          <div class="pf-info">
+          <div id="testing" class="pf-info">
             <div class="bs-title">
               <h3>Usability Testing</h3>
               <span class="title-number">08</span>
@@ -630,7 +655,7 @@
             </div>
           </div>
           <!--9-->
-          <div class="pf-info">
+          <div id="refine" class="pf-info">
             <div class="bs-title">
               <h3>Refining the design</h3>
               <span class="title-number">09</span>
@@ -654,7 +679,7 @@
             </div>
           </div>
           <!--10-->
-          <div class="pf-info">
+          <div id="designS" class="pf-info">
             <div class="bs-title">
               <h3>Design Systems</h3>
               <span class="title-number">10</span>
@@ -677,7 +702,7 @@
             </div>
           </div>
           <!--11-->
-          <div class="pf-info">
+          <div id="mockup" class="pf-info">
             <div class="bs-title">
               <h3>Mockups</h3>
               <span class="title-number">11</span>
@@ -690,7 +715,7 @@
             </div>
           </div>
           <!--12-->
-          <div class="pf-info">
+          <div id="prototype" class="pf-info">
             <div class="bs-title">
               <h3>Mobile App Features Showcase</h3>
               <span class="title-number">12</span>
@@ -759,7 +784,7 @@
             </div>
           </div>
           <!--13-->
-          <div class="pf-info">
+          <div id="impact" class="pf-info">
             <div class="bs-title">
               <h3>Impact and Reflection</h3>
               <span class="title-number">13</span>
@@ -863,7 +888,13 @@
         </div>
       </div>
     </section>
-
+    <button
+      id="scrollToContentsBtn"
+      class="scroll-top"
+      onclick="scrollToContents()"
+    >
+      <img src="images/list-icon.svg" />
+    </button>
     <footer class="tc-footer" id="tc-footer">
       <div class="uk-container uk-container-center">
         <div class="uk-grid pt20 pb20">
@@ -921,7 +952,27 @@
         });
       }
     </script>
+    <script>
+      // Show/hide scroll to contents button
+      window.onscroll = function () {
+        let btn = document.getElementById("scrollToContentsBtn");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
 
+      // Scroll to case study contents function
+      function scrollToContents() {
+        document
+          .getElementById("case-study-overview")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
     <!-- Jquery js -->
     <script src="js/jquery.min.js"></script>
 

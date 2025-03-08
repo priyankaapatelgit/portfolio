@@ -333,8 +333,36 @@
               </div>
             </div>
           </div>
+          <!-- Case Study Overview -->
+          <div id="case-study-overview" class="index-container mt100">
+            <h2>Case Study <span class="half-highlight">Outline</span></h2>
+            <div class="index">
+              <a href="#foundations"
+                ><span>Research Foundations</span> <span>↓</span></a
+              >
+              <a href="#literature"
+                ><span>Literature Review</span> <span>↓</span></a
+              >
+              <a href="#survey"><span>Survey</span> <span>↓</span></a>
+              <a href="#interview"
+                ><span>User Interviews</span> <span>↓</span></a
+              >
+              <a href="#research"
+                ><span>Market Research</span> <span>↓</span></a
+              >
+              <a href="#audit"><span>Competitor audits</span> <span>↓</span></a>
+              <a href="#monetization"
+                ><span>Monetization for mentorship program</span>
+                <span>↓</span></a
+              >
+              <a href="#impact"
+                ><span>Findings & Conclusion</span> <span>↓</span></a
+              >
+              <a href="https://velosaty.com/" target="_blank">Visit Website</a>
+            </div>
+          </div>
           <!--1-->
-          <div class="pf-info">
+          <div id="foundations" class="pf-info">
             <div class="bs-title">
               <h3>Research Foundations</h3>
               <span class="title-number">01</span>
@@ -392,7 +420,7 @@
             </div>
           </div>
           <!--2-->
-          <div class="pf-info">
+          <div id="literature" class="pf-info">
             <div class="bs-title">
               <h3>Literature review</h3>
               <span class="title-number">02</span>
@@ -452,7 +480,7 @@
             </div>
           </div>
           <!--3-->
-          <div class="pf-info">
+          <div id="survey" class="pf-info">
             <div class="bs-title">
               <h3>Survey</h3>
               <span class="title-number">03</span>
@@ -494,7 +522,7 @@
             </div>
           </div>
           <!--4-->
-          <div class="pf-info">
+          <div id="interview" class="pf-info">
             <div class="bs-title">
               <h3>User Interviews</h3>
               <span class="title-number">04</span>
@@ -551,7 +579,7 @@
             </div>
           </div>
           <!--5-->
-          <div class="pf-info">
+          <div id="research" class="pf-info">
             <div class="bs-title">
               <h3>Market research</h3>
               <span class="title-number">05</span>
@@ -629,7 +657,7 @@
             </div>
           </div>
           <!--6-->
-          <div class="pf-info">
+          <div id="audit" class="pf-info">
             <div class="bs-title">
               <h3>Competitor audits</h3>
               <span class="title-number">06</span>
@@ -707,7 +735,7 @@
             </div>
           </div>
           <!--7-->
-          <div class="pf-info">
+          <div id="monetization" class="pf-info">
             <div class="bs-title">
               <h3>Monetization for mentorship program</h3>
               <span class="title-number">07</span>
@@ -733,7 +761,7 @@
             </ul>
           </div>
           <!--8-->
-          <div class="pf-info">
+          <div id="impact" class="pf-info">
             <div class="bs-title">
               <h3>Research Findings & Conclusion</h3>
               <span class="title-number">08</span>
@@ -858,7 +886,13 @@
         </div>
       </div>
     </section>
-
+    <button
+      id="scrollToContentsBtn"
+      class="scroll-top"
+      onclick="scrollToContents()"
+    >
+      <img src="images/list-icon.svg" />
+    </button>
     <footer class="tc-footer" id="tc-footer">
       <div class="uk-container uk-container-center">
         <div class="uk-grid pt20 pb20">
@@ -914,6 +948,27 @@
             tooltip.classList.remove("show");
           }, 2000);
         });
+      }
+    </script>
+    <script>
+      // Show/hide scroll to contents button
+      window.onscroll = function () {
+        let btn = document.getElementById("scrollToContentsBtn");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+
+      // Scroll to case study contents function
+      function scrollToContents() {
+        document
+          .getElementById("case-study-overview")
+          .scrollIntoView({ behavior: "smooth" });
       }
     </script>
 
