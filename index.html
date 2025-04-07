@@ -134,10 +134,10 @@
                     <a href="index.html">Home</a>
                   </li>
                   <li>
-                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Work</a>
                   </li>
                   <li>
-                    <a href="portfolio.html">Work</a>
+                    <a href="about.html">About</a>
                   </li>
                   <li>
                     <a href="contact.html">Contact</a>
@@ -221,14 +221,14 @@
                   technical insight to every project, always designing for real
                   people, not just an idealized vision.
                 </p>
-                <p>
+                <!-- <p>
                   <i
                     >"Logic's weave, a visual thread, User's joy, where paths
                     are led<br />
                     Wit and art, a coding blend, Design's journey, has no
                     end"</i
                   >
-                </p>
+                </p> -->
                 <div class="spacer30"></div>
                 <a href="portfolio.html" class="readon pill">check my work</a>
               </div>
@@ -247,63 +247,241 @@
     <!-- Main Start -->
     <main class="tc-main" id="tc-main">
       <!-- Services Start-->
-      <section
-        class="tc-serviecs tc-service-style1 sec-spacer"
-        id="tc-serviecs"
-        title="<-- Swip -->"
-      >
+      <section class="tc-works sec-spacer" id="tc-works">
         <div class="uk-container-center uk-container">
           <div class="tc-heading uk-text-center">
-            <h3>SERVICES</h3>
-            <h2>WHAT <span class="half-highlight">I DO</span></h2>
+            <h3>WORK</h3>
+            <h2>FEATURED <span class="half-highlight">PROJECTS</span></h2>
             <p>
-              I design interfaces that connect, inform, and delight users. By
-              focusing on their <br />needs, I bring clarity to complex
-              challenges.
+              Discover projects where I've designed interfaces focused on user
+              needs, resulting <br />in clear, engaging, and delightful
+              experiences.
             </p>
           </div>
 
-          <div data-uk-slider>
-            <div class="uk-slider-container">
-              <ul
-                class="uk-slider uk-grid uk-grid-width-large-1-3 uk-grid-width-medium-1-2"
+          <div
+            class="uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1"
+            data-uk-grid="{gutter: 35, controls: '#filter'}"
+          >
+            <!--1-->
+            <div>
+              <!-- password div for velosaty start-->
+              <div
+                class="password-main"
+                id="password"
+                style="display: none; z-index: 99999"
+                class=""
               >
-                <li>
-                  <div class="services-item">
-                    <i class="li li-computer-imac-slim"></i>
-                    <h3><a href="portfolio.html">PRODUCT DESIGN</a></h3>
-                    <p>
-                      Crafting intuitive and visually appealing user interfaces
-                      that enhance the user experience.
-                    </p>
+                <div class="password-inner">
+                  <div
+                    id="close"
+                    class="close-btn"
+                    onclick="document.getElementById('password').style.display = 'none';"
+                  >
+                    <i class="uk-icon-close"></i>
                   </div>
-                </li>
-                <li>
-                  <div class="services-item">
-                    <i class="li li-webpage-multiple"></i>
-                    <h3>
-                      <a href="portfolio.html">USER RESEARCH & TESTING</a>
-                    </h3>
-                    <p>
-                      Conducting usability tests, interviews, and surveys to
-                      create data-driven, user-centered designs.
-                    </p>
+                  <h3>Enter password</h3>
+                  <form id="passwordForm">
+                    <input id="takeinput" type="password" class="pass-input" />
+                    <div id="error" style="visibility: hidden" class="invalid">
+                      Invalid password
+                    </div>
+                    <button
+                      id="button"
+                      type="button"
+                      onclick="if(document.getElementById('takeinput').value=='Innovator')
+                      {window.location='velosaty.html';}
+                      else
+                      {document.getElementById('error').style.visibility = 'visible';
+                      return false;}"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-- password div end-->
+              <div class="pfolio-item">
+                <div class="post-grid-item">
+                  <div class="post-grid-img">
+                    <a href="velosaty.html">
+                      <img
+                        src="images/portfolio/small/velosaty-sm.png"
+                        alt="Velosaty"
+                      />
+                    </a>
                   </div>
-                </li>
-                <li>
-                  <div class="services-item">
-                    <i class="li li-lifesaver"></i>
-                    <h3>
-                      <a href="portfolio.html">DESIGN SYSTEMS & STYLE GUIDES</a>
-                    </h3>
-                    <p>
-                      Developing scalable design systems to ensure consistency
-                      across all digital touchpoints.
-                    </p>
+                  <div class="post-grid-content">
+                    <div class="post-grid-head">
+                      <h3 class="post-grid-title">
+                        <a href="velosaty.html">Student-athletes Mentorship</a>
+                      </h3>
+                      <ul class="post-grid-meta">
+                        <li>UX/UI design and research</li>
+                      </ul>
+                    </div>
+                    <div class="post-grid-desc">
+                      <p>
+                        Empowering student-athletes to navigate life beyond
+                        sports by designing an intuitive website and dashboard
+                        for personalized 1-1 mentorship experiences
+                      </p>
+                    </div>
+                    <div class="post-grid-footer">
+                      <ul class="post-grid-meta">
+                        <li>SaaS</li>
+                        <li>B2C</li>
+                        <li>EdTech</li>
+                        <li>Dashboard</li>
+                        <li>Research</li>
+                      </ul>
+                    </div>
                   </div>
-                </li>
-              </ul>
+                  <div class="link-wrap">
+                    <a
+                      onclick="document.getElementById('password').style.display = 'flex';
+                      document.getElementById('takeinput').focus(); return false;"
+                      style="cursor: pointer"
+                      href="velosaty.html"
+                      ><i class="uk-icon-lock"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!--2-->
+            <div>
+              <!-- password div for SONNY start-->
+              <div
+                class="password-main"
+                id="password2"
+                style="display: none; z-index: 99999"
+                class=""
+              >
+                <div class="password-inner">
+                  <div
+                    id="close2"
+                    class="close-btn"
+                    onclick="document.getElementById('password2').style.display = 'none';"
+                  >
+                    <i class="uk-icon-close"></i>
+                  </div>
+                  <h3>Enter password</h3>
+                  <form id="passwordForm">
+                    <input id="takeinput2" type="password" class="pass-input" />
+                    <div id="error2" style="visibility: hidden" class="invalid">
+                      Invalid password
+                    </div>
+                    <button
+                      id="button2"
+                      type="button"
+                      onclick="if(document.getElementById('takeinput2').value=='Innovator')
+                      {window.location='sonny.html';}
+                      else
+                      {document.getElementById('error2').style.visibility = 'visible';
+                      return false;}"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!-- password div end-->
+              <div class="pfolio-item">
+                <div class="post-grid-item">
+                  <div class="post-grid-img">
+                    <a href="sonny.html">
+                      <img
+                        src="images/portfolio/small/sonny-sm.png"
+                        alt="SONNY"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-grid-content">
+                    <div class="post-grid-head">
+                      <h3 class="post-grid-title">
+                        <a href="sonny.html">NYC e-commerce website</a>
+                      </h3>
+                      <ul class="post-grid-meta">
+                        <li>UX/UI design</li>
+                      </ul>
+                    </div>
+                    <div class="post-grid-desc">
+                      <p>
+                        Designed seamless user experiences for buyers and
+                        sellers on NYC e-commerce website, from wireframing to
+                        prototyping, enhancing the shopping experience.
+                      </p>
+                    </div>
+                    <div class="post-grid-footer">
+                      <ul class="post-grid-meta">
+                        <li>E-commerce</li>
+                        <li>B2B2C</li>
+                        <li>Buyer</li>
+                        <li>Seller</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="link-wrap">
+                    <a
+                      onclick="document.getElementById('password2').style.display = 'flex';
+                    document.getElementById('takeinput2').focus(); return false;"
+                      style="cursor: pointer"
+                      href="sonny.html"
+                      ><i class="uk-icon-lock"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--3-->
+            <div>
+              <div class="pfolio-item">
+                <div class="post-grid-item">
+                  <div class="post-grid-img">
+                    <a href="budget.html">
+                      <img
+                        src="images/portfolio/small/budget-sm.png"
+                        alt="Future Safe"
+                      />
+                    </a>
+                  </div>
+                  <div class="post-grid-content">
+                    <div class="post-grid-head">
+                      <h3 class="post-grid-title">
+                        <a href="budget.html">Budgeting & Saving app</a>
+                      </h3>
+                      <ul class="post-grid-meta">
+                        <li>UX/UI design & research</li>
+                      </ul>
+                    </div>
+                    <div class="post-grid-desc">
+                      <p>
+                        Designed an app to help young adults master budgeting,
+                        save money effectively, and avoid unnecessary spending,
+                        guiding them toward a secure financial future.
+                      </p>
+                    </div>
+                    <div class="post-grid-footer">
+                      <ul class="post-grid-meta">
+                        <li>FinTech</li>
+                        <li>B2C</li>
+                        <li>App</li>
+                        <li>Data Analysis</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="link-wrap">
+                    <a href="budget.html"><i class="uk-icon-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer30"></div>
+          <div class="uk-text-center">
+            <a href="portfolio.html" class="readon pill">See More Projects</a>
           </div>
         </div>
       </section>
@@ -640,10 +818,10 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="portfolio.html">Work</a>
           </li>
           <li>
-            <a href="portfolio.html">Work</a>
+            <a href="about.html">About</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>
@@ -667,6 +845,35 @@
           }, 2000);
         });
       }
+    </script>
+
+    <!-- password protected Js -->
+    <script>
+      var input = document.getElementById("takeinput");
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("button").click();
+        }
+      });
+    </script>
+    <script>
+      var input = document.getElementById("takeinput2");
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("button2").click();
+        }
+      });
+    </script>
+    <script>
+      var input = document.getElementById("takeinput3");
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("button3").click();
+        }
+      });
     </script>
 
     <!-- Jquery js -->
